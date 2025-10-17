@@ -8,7 +8,7 @@ function Login() {
       {
           e.preventDefault();
           console.log(JSON.stringify({email:credentials.email,password:credentials.password}));
-          const response=await fetch("http://localhost:5000/api/loginuser",{
+          const response=await fetch("https://go-food-autj.vercel.app/api/loginuser",{
           method:'POST',
           headers:
           {

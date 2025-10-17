@@ -14,7 +14,7 @@ export default function Home()
 
   const localData=async()=>
   {
-    let response=await fetch("http://localhost:5000/api/foodData",
+    let response=await fetch("https://go-food-autj.vercel.app/api/foodData",
       {
         method:"POST",
         headers:{
