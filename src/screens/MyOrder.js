@@ -45,7 +45,7 @@ export default function MyOrder() {
             <div className='container'>
                 <div className='row'>
 
-                    {orderData !== {} ? Array(orderData).map(data => {
+                    {orderData != {} ? Array(orderData).map(data => {
                         return (
                             data.orderData ? //reverse means latest first order 
                                 data.orderData.order_data.slice(0).reverse().map((item,i) => { ////order_data in mongodb check in mongodb  
