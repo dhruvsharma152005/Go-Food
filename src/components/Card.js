@@ -25,7 +25,7 @@ const priceRef=useRef();
         break;
       }
     }
-    if(food!==[])
+    if(food!=[])
     {
       if(food.size === size)
       {
@@ -33,7 +33,7 @@ const priceRef=useRef();
         return
       }
     
-    else if(food.size !== size)
+    else if(food.size != size)
     {
     await dispatch({type:"ADD",id:props.foodItem.id,name:props.foodItem.name,price:finalPrice,qty:qty,size:size,img: props.ImgSrc})
     return
