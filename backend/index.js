@@ -1,8 +1,11 @@
+require('dotenv').config();
 const express=require('express')
+
 const app=express();
-const port=5000;
+const port=process.env.VITE_PORT;
 const mongoDB=require("./db"); //not import bcz we work on nodejs
 mongoDB();
+
 //this is new method for cors
 /*const cors = require('cors');
 

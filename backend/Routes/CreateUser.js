@@ -2,8 +2,9 @@ const express=require('express');
 const router=express.Router();
 const  User=require('../models/User');
 const jwt=require("jsonwebtoken");
+
 //JWTs, or JSON Web Tokens, are primarily used for securely transmitting information between two parties, typically a client and a server, and are commonly used for authentication and authorization purposes
-const jwtSecret="MynameisEndtoEndYouTubeChannel$#"
+const jwtSecret=process.env.VITE_JWT;
 const{body,validationResult}=require('express-validator');
 
 
