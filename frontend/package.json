@@ -25,6 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://go-food-autj.vercel.app",
+
   "eslintConfig": {
     "extends": [
       "react-app",

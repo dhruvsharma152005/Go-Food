@@ -9,13 +9,14 @@ export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
 
-  // Fetch data from API
+  // Fetch data from API using relative path for proxy
   const localData = async () => {
     try {
       let response = await fetch("https://go-food-autj.vercel.app/api/foodData", {
         method: "POST",
         headers: { "Content-Type": "application/json" }
       });
+
       response = await response.json();
 
       // response[0] -> food items, response[1] -> categories

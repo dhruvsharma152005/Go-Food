@@ -32,7 +32,7 @@ app.use(cors({
 //cors another
 const cors = require('cors');
 app.use(cors({
-    origin: "https://go-food-95yb.vercel.app",
+    origin: ["http://localhost:3000","https://go-food-autj.vercel.app","https://go-food-95yb.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
