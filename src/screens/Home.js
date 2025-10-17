@@ -73,14 +73,14 @@ export default function Home()
     {/* //video 9 */}
       <div className='container'>
         {
-        foodCat !==[]
+        foodCat !=[]
         ? foodCat.map((data)=>
         {
           return (<div className='row mb-3' key={data._id}>
           <div  className="fs-3 m-3">{data.CategoryName}</div>
           <hr />
           {/* humeh category name ke andhar uss data ko dikhana ha */}
-          {foodItem !== [] ? foodItem.filter((item)=>(item.CategoryName === data.CategoryName)  && (item.name.toLowerCase().includes(search.toLocaleLowerCase())) )
+          {foodItem != [] ? foodItem.filter((item)=>(item.CategoryName === data.CategoryName)  && (item.name.toLowerCase().includes(search.toLocaleLowerCase())) )
           .map(filterItems=>{return(
             <div key={filterItems._id} className='col-12 col-md-6 col-lg-3'>
               {/* from mongo db */}
