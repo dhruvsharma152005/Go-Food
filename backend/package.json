@@ -8,7 +8,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "nodemon index.js"
+=======
+    "start":"nodemon index.js"
+>>>>>>> f3d886233a4d0da5d66a1ad550aab718c2425861
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
